@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/tei.css">
+  <script src="js/CETEI.js"></script>
+  <script>
+    let c = new CETEI();
+    let behaviors = {
+      "tei": {
+        "head": function(e) {
+          let level = document.evaluate("count(ancestor::tei-div)", e, null, XPathResult.NUMBER_TYPE, null);
+          let result = document.createElement("h" + (level.numberValue>7 ? 7 : level.numberValue));
+          for (let n of Array.from(e.childNodes)) {
+            result.appendChild(n.cloneNode());
+          }
+          return result;
+        },
+        "lb": ["<br>"],
+        "pb": ["<p style='text-align: center;'>Nächstes Blatt</p>"],
+        "standOff": function(e) {
+          let result = document.createElement("div");
+
+          let title = document.createElement("h1");
+          title.innerHTML = "From: Seidlitz, Woldemar von To: Burckhardt, Jacob, Dresden 1890";
+          result.appendChild(title);
+
+          title = document.createElement("h2");
+          title.innerHTML = "Personenliste:";
+          result.appendChild(title);
+          for (let row of Array.from(e.querySelectorAll("tei-listPerson > tei-person > tei-persName"))) {
+            let p = document.createElement("p");
+            p.style = "margin: 0px;";
+            p.innerHTML = row.innerHTML;
+            result.appendChild(p);
+          }
+
+          title = document.createElement("h2");
+          title.innerHTML = "Ortsliste:";
+          result.appendChild(title);
+          for (row of Array.from(e.querySelectorAll("tei-listPlace > tei-place > tei-placeName"))) {
+            p = document.createElement("p");
+            p.style = "margin: 0px;";
+            p.innerHTML = row.innerHTML;
+            result.appendChild(p);
+          }
+
+          title = document.createElement("h2");
+          title.innerHTML = "Bibliographie:";
+          result.appendChild(title);
+          for (row of Array.from(e.querySelectorAll("tei-listBibl > tei-bibl > tei-title"))) {
+            p = document.createElement("p");
+            p.style = "margin: 0px;";
+            p.innerHTML = row.innerHTML;
+            result.appendChild(p);
+          }
+
+          return result;
+        }
+      }
+    };
+    c.addBehaviors(behaviors);
+    c.getHTML5('burckhardt.xml', function(data){
+      document.getElementsByTagName('body')[0].appendChild(data);
+    });
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

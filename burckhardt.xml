@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>From: Seidlitz, Woldemar von To: Burckhardt, Jacob, Dresden 1890</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>LV Digitale Edition - Übung</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <publisher>Burckhardt-Archiv</publisher>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#WvS">Woldemar von Seidlitz</persName>
+               <settlement ref="#D">Dresden</settlement>
+               <date when="1890-11-21">21 Nov 1890</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#JB">Jacob Burckhardt</persName>
+            </correspAction>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <standOff>
+      <listPerson>
+         <person xml:id="WvS">
+            <persName>Woldemar von Seidlitz</persName>
+            <occupation>Kunsthistoriker</occupation>
+            <birth>
+               <date when="1850-06-01">1. Juni 1850</date>
+               <placeName ref="#StP">Sankt Petersburg</placeName>
+            </birth>
+            <death>
+               <date when="1922-01-12">12. Januar 1922</date>
+               <placeName ref="#D">Dresden</placeName>
+            </death>
+            <idno type="GND">http://d-nb.info/gnd/117465224</idno>
+         </person>
+         <person xml:id="JB">
+            <persName>Jacob Burckhardt</persName>
+            <occupation>Kunsthistoriker</occupation>
+            <birth>
+               <date when="1818-05-25">25. Mai 1818</date>
+               <placeName ref="#B">Basel</placeName>
+            </birth>
+            <death>
+               <date when="1897-08-08">8. August 1897</date>
+               <placeName ref="#B">Basel</placeName>
+            </death>
+            <idno type="GND">http://d-nb.info/gnd/11851752X</idno>
+         </person>
+         <person xml:id="WvB">
+            <persName>Wilhelm von Bode</persName>
+            <idno type="GND">http://d-nb.info/gnd/119034921</idno>
+         </person>
+         <person xml:id="CJ">
+            <persName>Carl Justi</persName>
+         </person>
+         <person xml:id="HB">
+            <persName>Heinrich Brunn</persName>
+            <idno type="GND">http://d-nb.info/gnd/116777273</idno>
+         </person>
+         <person xml:id="BZ">
+            <persName>Bernardo Zenale</persName>
+         </person>
+         <person xml:id="DB">
+            <persName>Donato Bramante</persName>
+         </person>
+         <person xml:id="HAvG">
+            <persName>Heinrich Adolf von Geymüller</persName>
+         </person>
+         <person xml:id="IL">
+            <persName> Ivan Lermolieff <addName>Giovanni Morelli</addName>
+            </persName>
+         </person>
+         <person xml:id="RSdU">
+            <persName>Raffaello Sanzio da Urbino</persName>
+         </person>
+         <person xml:id="CFvR">
+            <persName>Carl Friedrich von Rumohr</persName>
+         </person>
+         <person xml:id="LdV">
+            <persName>Leonardo di ser Piero da Vinci </persName>
+         </person>
+         <person xml:id="GP">
+            <persName> Gianfrancesco Penni <addName>Giovan Francesco</addName>
+            </persName>
+         </person>
+         <person xml:id="TV">
+            <persName>Timoteo Viti</persName>
+         </person>
+         <person xml:id="RvR">
+            <persName>Rembrandt van Rijn</persName>
+         </person>
+      </listPerson>
+      <listPlace>
+         <place xml:id="D">
+            <placeName>Dresden</placeName>
+            <country>Deutschland</country>
+         </place>
+         <place xml:id="StP">
+            <placeName>St. Petersburg</placeName>
+            <country>Russland</country>
+         </place>
+         <place xml:id="B">
+            <placeName>Basel</placeName>
+            <country>Schweiz</country>
+         </place>
+         <place xml:id="M">
+            <placeName>Mailand</placeName>
+            <country>Italien</country>
+         </place>
+         <place xml:id="T">
+            <placeName>Treviglio</placeName>
+            <country>Italien</country>
+            <idno type="GND">http://d-nb.info/gnd/4229094-6</idno>
+         </place>
+      </listPlace>
+      <listBibl>
+         <bibl xml:id="RaE">
+            <title>Rembrandt als Erzieher</title>
+            <author>Julius Langbehn</author>
+            <idno type="SBB">http://stabikat.de/DB=1/XMLPRS=N/PPN?PPN=188875654</idno>
+         </bibl>
+         <bibl xml:id="DVusJ">
+            <title>Diego Velazquez und sein Jahrhundert</title>
+            <author ref="#CJ">Carl Justi</author>
+            <idno type="SBB">http://stabikat.de/DB=1/XMLPRS=N/PPN?PPN=146152050</idno>
+         </bibl>
+         <bibl xml:id="GdgK">
+            <title>Geschichte der griechischen Künstler</title>
+            <author ref="#HB">Heinrich Brunn</author>
+            <idno type="SBB">http://stabikat.de/DB=1/XMLPRS=N/PPN?PPN=27071183X</idno>
+         </bibl>
+         <bibl xml:id="DK" type="journal">
+            <title>Der Kunstwart</title>
+            <edition>2</edition>
+         </bibl>
+         <bibl xml:id="ML" type="painting">
+            <title>Madonna Litta</title>
+            <author>Giovanni Antonio Boltraffio</author>
+         </bibl>
+         <bibl xml:id="VdB" type="painting">
+            <title>Verbrennng des Borgo</title>
+            <author ref="#IL">Domenico Morelli</author>
+         </bibl>
+         <bibl xml:id="SdR" type="painting">
+            <title>Stanzen des Raffael</title>
+            <author ref="#RSdU">Raffaello Sanzio da Urbino</author>
+         </bibl>
+         <bibl xml:id="S" type="painting">
+            <title>Sybille</title>
+            <author ref="#RSdU">Raffaello Sanzio da Urbino</author>
+         </bibl>
+         <bibl xml:id="SM" type="painting">
+            <title>Sixtinische Madonna</title>
+            <author ref="#RSdU">Raffaello Sanzio da Urbino</author>
+         </bibl>
+         <bibl xml:id="RR" type="painting">
+            <title>Radierungen</title>
+            <author ref="#RvR">Rembrandt van Rijn</author>
+         </bibl>
+      </listBibl>
+   </standOff>
+   <text>
+      <body>
+         <dateline rend="right"> Dresden, <date when="1890-11-21">21 Nov 1890</date>
+         </dateline>
+         <opener>Hochverehrter <rs ref="#JB" type="person">Herr</rs>,</opener>
+         <p> Haben Sie schönsten Dank für Ihren Brief, der mir wirklich wohl gethan Ein so lebhaftes
+            Interesse für alle diese Fragen, wie Sie es bekunden, ist leider so äußerst selten zu
+            finden; nach mei- ner Erfahrung ist nur noch <rs ref="#WvB" type="person">Bode</rs>
+            dessen fähig, mit dem ich die meisten meiner Arbeiten in einigen Haupt- zügen vorher zu
+            besprechen pflege. Ihr Brief führt mir wieder vor, wie wenig wir bei der Verfolgung der
+            Einzelheiten das Ganze im Auge zu behalten vermögen. Jeder Ihrer Briefe öffnet mir in
+            erwärmender Weise den Ausblick auf die großen, lebendigen Bezüge der Kunstthätigkeit
+            vergangener Zeiten Aber ich weiß wohl, daß man sich da nach seinen Kräften bescheiden
+            muß; die Kritik hat jetzt noch zu viel zu thun Macht sich jemand mit echter </p>
+         <pb/>
+         <p> Begeisterung an eine kunsthistorische Aufgabe, so thut mir das im Innersten wohl. Daher
+            halte ich auch den «<rs type="bibl" ref="#RaE">Rem- brandt als Erzieher</rs>» so hoch
+            Aus den letzten Jahren kenne ich eigentlich nur ein Buch, das Kritik und Kunstwür-
+            digung verbunden hat, <rs ref="#CJ" type="person">Justis</rs>
+            <rs type="bibl" ref="#DVusJ">Velaz- quez</rs> Das finde ich fast so schön wie <rs
+               ref="#HB" type="person">Brunns</rs>
+            <rs type="bibl" ref="#GdgK">Gesch. d. Gr. Künstler</rs>. Leider konnte ich Ihnen die 4
+            Artikel nicht schicken, die ich darüber im <rs type="bibl" ref="#DK">II. Jahrgang des
+               Kunstwarts unter dem Titel: Justis Vel. als Compendium praktischer Aesthe- tik</rs>
+            geschrieben Nun weiß ich wohl, daß ich durch- aus nicht im̄er «besonnene» Kritik übe,
+            theils weil ich das erst lernen muß, theils weil ich denke, es schade nichts, darin
+            etwas zu weit zu gehen, das werde dann schon von anderen </p>
+         <pb/>
+         <p> berichtigt werden So sind auch meine Artikel über die <rs type="place" ref="M"
+               >Mailänder</rs> erst Versuche, die Sache mal unter einem andern Gesichtspunkt zu
+            betrachten Für die Kenntniß <rs ref="#BZ" type="person">Zenales</rs> fehlen freilich
+            im̄er noch die Aufnahmen des Bildes in <rs type="place" ref="T">Treviglio</rs> Den
+               Pseudo-<rs ref="#BZ" type="person">Zenale</rs> bin ich geneigt für ein frühes Werk
+            jenes unmittelbarsten <rs ref="#LdV" type="person">Lionardo</rs>-Schü- lers zu halten,
+            von dem z. B. die schöne <rs type="bibl" ref="#ML">Mad. Litta</rs> in <rs type="place"
+               ref="StP">St. Petersburg</rs>, doch müßte dessen Werk erst mal zusam̄engestellt
+            werden, wozu <rs ref="#WvB" type="person">Bode</rs> schon die ersten Schritte gethan Bei
+               <rs ref="#DB" type="person">Bramante</rs> glaube ich darin zu weit gegangen zu sein,
+            daß ich zu viele unter seinem unmit- telbaren Einfluß entstandene Bra- mantinos ihm
+            selbst zugeschrieben habe </p>
+         <pb/>
+         <p> Doch handelt es sich dabei eigentlich nur um eine Benenng; an der Sache wird dadurch
+            wohl nicht viel geändert. <rs ref="#HAvG" type="person">Geymüller</rs> stellte mir mal
+            eine Antwort auf meinen Bramante-Auf- satz in Aussicht, doch warte ich seit Jahren
+            vergebens drauf. Wenn ich nur schwer geneigt bin, <rs ref="#RSdU" type="person"
+               >Raphael</rs> neue Zeichnungen zuzuschrei ben, so hängt das damit zusam̄en, daß ich
+            freilich einen sehr hohen Begriff von seiner Zeichenkunst habe <rs ref="#IL"
+               type="person">Morellis</rs>
+            <rs ref="#VdB" type="bibl">Borgo-Zeichnung</rs> schien mir dem, we- nigstens in ihrem
+            jetzigen Zustand, nicht zu entsprechen. Ob <rs ref="#RSdU" type="person">Raphael</rs>
+            schon bei der <rs ref="#SdR" type="bibl">Segnatura- Stanza</rs> seine späteren Schüler
+            um sich gehabt, weiß ich nicht; erst beim <rs ref="#SdR" type="bibl"
+               >Heliodorszim̄er</rs> fallen sie mir auf. Es scheint mir also nicht undenkbar, </p>
+         <pb/>
+         <p> daß er anfangs <rs ref="#TV" type="person">Viti</rs> herangezogen habe. Bei den <rs
+               ref="#SdR" type="bibl">Sibyllen der Pace</rs> hat sich mir freilich keine im Geist
+            von <rs ref="#RSdU" type="person">Raphael</rs> entfernte Hand bemerklich gemacht. Eine
+            Theilnahme <rs ref="#TV" type="person">Vitis</rs> dürfte da wohl schwerlich anzunehmen
+            sein. Von dem anderen Fresko daselbst habe ich aber leider gar keine Erinnerug behalten
+            Denken Sie bei der <rs ref="#SdR" type="bibl">Sixtin. Madonna</rs> nicht an <rs
+               ref="#CFvR" type="person">Rumohrs</rs> Annahme, daß <rs ref="#GP" type="person"
+               >Penni</rs> dabei betheiligt gewesen sei? Von <rs ref="#TV" type="person">Viti</rs>
+            weiß ich nichts. Nächstens hoffe ich ein Buch über <rs ref="#RvR" type="person">Rem-
+               brandts</rs>
+            <rs ref="#SdR" type="bibl">Radirungen</rs> fertig zu machen, das Verzeichniß freilich
+            auch kritisch, aber in dem allgemeinen Theil will ich es versuchen, auch bis zum
+            Künstle- rischen in ihm vorzudringen. </p>
+         <closer rend="right">In aufrichtiger Ergebenheit Ihr <rs ref="#WvS" type="person">W
+               Seidlitz</rs></closer>
+      </body>
+   </text>
+</TEI>
